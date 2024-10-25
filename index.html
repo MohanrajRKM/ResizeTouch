@@ -27,88 +27,73 @@
     <!-- <script src="ej2.min.js" type="text/javascript"></script> -->
     <script src="ej2_26_1_42.js" type="text/javascript"></script>
     <!-- <script src="ej2_grid_25_1_35.js" type="text/javascript"></script> -->
+    <style>
+      .options-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+      }
+  
+      .option-item {
+          display: flex;
+          align-items: center;
+          width: 30%; /* Adjust width as needed */
+      }
+  
+      .option-label {
+          width: 70%;
+      }
+  
+      .option-input {
+          width: 30%;
+          padding: 10px 10px 10px 0;
+      }
+    </style>
 
 
   </head>
   <body>
     <div style="margin: 50px;"></div>
+
+      <div class="options-container">
+        <div class="option-item">
+            <div class="option-label">Grouping</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="grouping"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">Sorting</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="sorting"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">Filtering</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="filtering"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">Reordering</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="reOrdering"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">RowDD</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="rowDD"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">RTL</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="rtl"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">Sticky</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="sticky"></div>
+        </div>
+        <div class="option-item">
+            <div class="option-label">Frozen</div>
+            <div class="option-input"><input type="checkbox" tabindex="0" id="frozen"></div>
+        </div>
+    </div>
     
     <div>
       <div id="Grid">
       </div>
-
-      <td style="width: 70%">
-          <div>Grouping</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="grouping">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>Sorting</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="sorting">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>filtering</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="filtering">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>Reordering</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="reOrdering">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>RowDD</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="rowDD">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>RTL</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="rtl">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>Sticky</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="sticky">
-          </div>
-      </td>
-
-      <td style="width: 70%">
-          <div>Frozen</div>
-      </td>
-      <td style="width: 30%;padding:10px 10px 10px 0px">
-          <div>
-              <input type="checkbox" tabindex="0" id="frozen">
-          </div>
-      </td>
-  </div>
+    </div>
 
     <script src="sample.js" type="text/javascript"></script>
   </body>
