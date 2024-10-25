@@ -164,6 +164,7 @@ var grid = new ej.grids.Grid({
     height: 400,
     width: 850,
     autoFit: true,
+    filterSettings: { type: 'Excel'},
     columns: [
         { field: 'OrderID', headerText: 'Order ID', minWidth: 100, width: 150, maxWidth: 200, textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true, number: true } },
         { field: 'CustomerID', headerText: 'Customer Name', minWidth: 115, width: 150, validationRules: { required: true, minLength: 5 } },
@@ -176,5 +177,88 @@ var grid = new ej.grids.Grid({
     ],
 });
 grid.appendTo('#Grid');
+
+var grouping = new ej.buttons.CheckBox();
+    grouping.appendTo('#grouping');
+    document.getElementById('grouping').onclick = function () {
+        if (grouping.checked) {
+            grid.allowGrouping = true;
+        }
+        else {
+            grid.allowGrouping = false;
+        }
+    };
+    var sorting = new ej.buttons.CheckBox();
+    sorting.appendTo('#sorting');
+    document.getElementById('sorting').onclick = function () {
+        if (sorting.checked) {
+            grid.allowSorting = true;
+        }
+        else {
+            grid.allowSorting = false;
+        }
+    };
+    var filtering = new ej.buttons.CheckBox();
+    filtering.appendTo('#filtering');
+    document.getElementById('filtering').onclick = function () {
+        if (filtering.checked) {
+            grid.allowFiltering = true;
+        }
+        else {
+            grid.allowFiltering = false;
+        }
+    };
+    var reOrdering = new ej.buttons.CheckBox();
+    reOrdering.appendTo('#reOrdering');
+    document.getElementById('reOrdering').onclick = function () {
+        if (reOrdering.checked) {
+            grid.allowReordering = true;
+        }
+        else {
+            grid.allowReordering = false;
+        }
+    };
+    var rowDD = new ej.buttons.CheckBox();
+    rowDD.appendTo('#rowDD');
+    document.getElementById('rowDD').onclick = function () {
+        if (rowDD.checked) {
+            grid.allowRowDragAndDrop = true;
+        }
+        else {
+            grid.allowRowDragAndDrop = false;
+        }
+    };
+    var rtl = new ej.buttons.CheckBox();
+    rtl.appendTo('#rtl');
+    document.getElementById('rtl').onclick = function () {
+        if (rtl.checked) {
+            grid.enableRtl = true;
+        }
+        else {
+            grid.enableRtl = false;
+        }
+    };
+    var sticky = new ej.buttons.CheckBox();
+    sticky.appendTo('#sticky');
+    document.getElementById('sticky').onclick = function () {
+        if (sticky.checked) {
+            grid.enableStickyHeader = true;
+        }
+        else {
+            grid.enableStickyHeader = false;
+        }
+    };
+    var frozen = new ej.buttons.CheckBox();
+    frozen.appendTo('#frozen');
+    document.getElementById('frozen').onclick = function () {
+        if (frozen.checked) {
+            grid.frozenColumns = 1;
+            grid.frozenRows = 3;
+        }
+        else {
+            grid.frozenColumns = 0;
+            grid.frozenRows = 0;
+        }
+    };
 
   
