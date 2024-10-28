@@ -187,26 +187,6 @@ var grouping = new ej.buttons.CheckBox();
             grid.allowGrouping = false;
         }
     };
-    var sorting = new ej.buttons.CheckBox();
-    sorting.appendTo('#sorting');
-    document.getElementById('sorting').onclick = function () {
-        if (sorting.checked) {
-            grid.allowSorting = true;
-        }
-        else {
-            grid.allowSorting = false;
-        }
-    };
-    var filtering = new ej.buttons.CheckBox();
-    filtering.appendTo('#filtering');
-    document.getElementById('filtering').onclick = function () {
-        if (filtering.checked) {
-            grid.allowFiltering = true;
-        }
-        else {
-            grid.allowFiltering = false;
-        }
-    };
     var reOrdering = new ej.buttons.CheckBox();
     reOrdering.appendTo('#reOrdering');
     document.getElementById('reOrdering').onclick = function () {
