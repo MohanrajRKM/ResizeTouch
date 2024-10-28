@@ -160,7 +160,6 @@ var stringData = [
 var grid = new ej.grids.Grid({
     dataSource:stringData,
     allowResizing: true,
-    allowSorting: true,
     height: 400,
     width: 850,
     autoFit: true,
