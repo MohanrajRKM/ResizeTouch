@@ -163,7 +163,6 @@ var grid = new ej.grids.Grid({
     height: 400,
     width: 850,
     autoFit: true,
-    filterSettings: { type: 'Excel'},
     columns: [
         { field: 'OrderID', headerText: 'Order ID', minWidth: 100, width: 150, maxWidth: 200, textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true, number: true } },
         { field: 'CustomerID', headerText: 'Customer Name', minWidth: 115, width: 150, validationRules: { required: true, minLength: 5 } },
