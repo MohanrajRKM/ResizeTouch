@@ -1,0 +1,1 @@
+Touch Resizing support.
