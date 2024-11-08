@@ -160,6 +160,9 @@ var stringData = [
 var grid = new ej.grids.Grid({
     dataSource:stringData,
     allowResizing: true,
+    enableAutoFill: true,
+    selectionSettings: { type: 'Multiple', mode: 'Cell', cellSelectionMode: 'Box' },
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
     height: 400,
     width: 850,
     autoFit: true,
